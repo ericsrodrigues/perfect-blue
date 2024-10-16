@@ -1,3 +1,3 @@
-My custom and minimalistic image based on the incredible project Universal Blue.
+My custom and minimalistic image based on the incredible project [Universal Blue](https://universal-blue.org/).
 
-![Alt Text](https://in.pinterest.com/pin/mega-charizard-x-flying-sticker-mega-charizard-x-flying-discover-share-gifs--69172544268639689/)
+Using Sway.
