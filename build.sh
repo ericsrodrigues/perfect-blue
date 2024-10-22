@@ -39,11 +39,8 @@ EOF
 # this installs a package from fedora repos
 rpm-ostree install \
   code \
-  openssl \
-  zsh \
   neovim \
   vim \
-  gnome-tweaks \
   docker-ce \
   docker-ce-cli \
   containerd.io \
