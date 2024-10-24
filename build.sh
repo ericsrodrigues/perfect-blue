@@ -56,6 +56,7 @@ rpm-ostree install \
   gnome-shell-extension-appindicator \
   gnome-shell-extension-gsconnect \
   gnome-shell-extension-light-style \
+  gnome-shell-extension-blur-my-shell \
   jetbrains-mono-fonts \
   google-noto-sans-cjk-fonts \
   gh
