@@ -41,7 +41,7 @@ EOF
 tee /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:erikreider:SwayNotificationCenter.repo <<'EOF'
 [copr:copr.fedorainfracloud.org:erikreider:SwayNotificationCenter]
 name=Copr repo for SwayNotificationCenter owned by Erik Reider
-baseurl=https://download.copr.fedorainfracloud.org/results/matte-schwartz/sunshine/fedora-$releasever-$basearch/
+baseurl=https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/fedora-$releasever-$basearch/
 type=rpm-md
 skip_if_unavailable=True
 gpgcheck=1
