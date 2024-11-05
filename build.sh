@@ -51,8 +51,6 @@ enabled=1
 enabled_metadata=1
 EOF
 
-sudo curl -sL -o /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:erikreider:SwayNotificationCenter.repo https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-$(rpm -E %fedora)/erikreider-SwayNotificationCenter-fedora-$(rpm -E %fedora).repo
-
 # this installs a package from fedora repos
 rpm-ostree install \
   code \
