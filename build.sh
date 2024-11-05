@@ -36,10 +36,13 @@ gpgcheck=1
 gpgkey=https://download.docker.com/linux/fedora/gpg
 EOF
 
+# SwayNC
+
+sudo curl -sL -o /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:erikreider:SwayNotificationCenter.repo https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-$(rpm -E %fedora)/erikreider-SwayNotificationCenter-fedora-$(rpm -E %fedora).repo
+
 # this installs a package from fedora repos
 rpm-ostree install \
   code \
-  openssl \
   zsh \
   neovim \
   vim \
@@ -52,18 +55,18 @@ rpm-ostree install \
   bootc \
   rclone \
   fastfetch \
-  nautilus-gsconnect \
-  gnome-shell-extension-appindicator \
-  gnome-shell-extension-gsconnect \
-  gnome-shell-extension-blur-my-shell \
   jetbrains-mono-fonts \
   google-noto-sans-cjk-fonts \
+  SwayNotificationCenter \
+  alacritty \
+  gammastep \
   gh
 
 # uninstall packages
 rpm-ostree uninstall \
   firefox \
-  firefox-langpacks
+  firefox-langpacks \
+  foot
 
 #### Example for enabling a System Unit File
 
