@@ -53,7 +53,8 @@ fastfetch \
 jetbrains-mono-fonts \
 google-noto-sans-cjk-fonts \
 alacritty \
-gh
+gh \
+kdenlive
 
 # uninstall packages
 rpm-ostree uninstall \
