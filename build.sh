@@ -54,7 +54,7 @@ jetbrains-mono-fonts \
 google-noto-sans-cjk-fonts \
 alacritty \
 gh \
-kdenlive
+corectrl
 
 # uninstall packages
 rpm-ostree uninstall \
