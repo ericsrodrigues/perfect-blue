@@ -25,6 +25,20 @@ gpgcheck=1
 gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 EOF
 
+# SwayNC Repo
+tee /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:erikreider:SwayNotificationCenter.repo <<'EOF'
+[copr:copr.fedorainfracloud.org:erikreider:SwayNotificationCenter]
+name=Copr repo for SwayNotificationCenter owned by Erik Reider
+baseurl=https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
+EOF
+
 # Docker Repo
 
 tee /etc/yum.repos.d/docker-ce.repo <<'EOF'
@@ -42,6 +56,7 @@ code \
 zsh \
 neovim \
 vim \
+gnome-tweaks \
 docker-ce \
 docker-ce-cli \
 containerd.io \
@@ -52,7 +67,9 @@ rclone \
 fastfetch \
 jetbrains-mono-fonts \
 google-noto-sans-cjk-fonts \
+SwayNotificationCenter \
 alacritty \
+gammastep \
 gh \
 corectrl
 
