@@ -36,24 +36,7 @@ gpgcheck=1
 gpgkey=https://download.docker.com/linux/fedora/gpg
 EOF
 
-<<<<<<< HEAD
-# SwayNC Repo
-
-tee /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:erikreider:SwayNotificationCenter.repo <<'EOF'
-[copr:copr.fedorainfracloud.org:erikreider:SwayNotificationCenter]
-name=Copr repo for SwayNotificationCenter owned by Erik Reider
-baseurl=https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/fedora-$releasever-$basearch/
-type=rpm-md
-skip_if_unavailable=True
-gpgcheck=1
-gpgkey=https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/pubkey.gpg
-repo_gpgcheck=0
-enabled=1
-enabled_metadata=1
-EOF
-
 =======
->>>>>>> parent of 41a304f (Update build.sh)
 # this installs a package from fedora repos
 rpm-ostree install \
 code \
