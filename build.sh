@@ -36,9 +36,6 @@ gpgcheck=1
 gpgkey=https://download.docker.com/linux/fedora/gpg
 EOF
 
-gpgkey=https://download.docker.com/linux/fedora/gpg
-EOF
-
 # SwayNC Repo
 
 tee /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:erikreider:SwayNotificationCenter.repo <<'EOF'
