@@ -36,6 +36,7 @@ gpgcheck=1
 gpgkey=https://download.docker.com/linux/fedora/gpg
 EOF
 
+<<<<<<< HEAD
 # SwayNC Repo
 
 tee /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:erikreider:SwayNotificationCenter.repo <<'EOF'
@@ -51,34 +52,29 @@ enabled=1
 enabled_metadata=1
 EOF
 
+=======
+>>>>>>> parent of 41a304f (Update build.sh)
 # this installs a package from fedora repos
 rpm-ostree install \
-  code \
-  zsh \
-  neovim \
-  vim \
-  gnome-tweaks \
-  docker-ce \
-  docker-ce-cli \
-  containerd.io \
-  docker-buildx-plugin \
-  docker-compose-plugin \
-  bootc \
-  rclone \
-  fastfetch \
-  jetbrains-mono-fonts \
-  google-noto-sans-cjk-fonts \
-  SwayNotificationCenter \
-  alacritty \
-  gammastep \
-  gh
+code \
+neovim \
+vim \
+docker-ce \
+docker-ce-cli \
+containerd.io \
+docker-buildx-plugin \
+docker-compose-plugin \
+bootc \
+fastfetch \
+jetbrains-mono-fonts \
+google-noto-sans-cjk-fonts \
+gh \
+corectrl
 
 # uninstall packages
 rpm-ostree uninstall \
-  firefox \
-  firefox-langpacks \
-  foot
-
+firefox \
+firefox-langpacks 
 
 #### Example for enabling a System Unit File
 
