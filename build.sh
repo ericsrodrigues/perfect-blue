@@ -36,7 +36,6 @@ gpgcheck=1
 gpgkey=https://download.docker.com/linux/fedora/gpg
 EOF
 
-=======
 # this installs a package from fedora repos
 rpm-ostree install \
 code \
