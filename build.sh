@@ -51,9 +51,7 @@ fastfetch \
 jetbrains-mono-fonts \
 google-noto-sans-cjk-fonts \
 gh \
-corectrl \
-mangohud \
-goverlay
+corectrl
 
 # uninstall packages
 rpm-ostree uninstall \
