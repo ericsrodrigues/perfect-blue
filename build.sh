@@ -52,7 +52,8 @@ jetbrains-mono-fonts \
 google-noto-sans-cjk-fonts \
 gh \
 corectrl \
-mangohud
+mangohud \
+goverlay
 
 # uninstall packages
 rpm-ostree uninstall \
