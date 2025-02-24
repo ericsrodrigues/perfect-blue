@@ -25,20 +25,6 @@ gpgcheck=1
 gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 EOF
 
-# SwayNC Repo
-tee /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:erikreider:SwayNotificationCenter.repo <<'EOF'
-[copr:copr.fedorainfracloud.org:erikreider:SwayNotificationCenter]
-name=Copr repo for SwayNotificationCenter owned by Erik Reider
-baseurl=https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/fedora-$releasever-$basearch/
-type=rpm-md
-skip_if_unavailable=True
-gpgcheck=1
-gpgkey=https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/pubkey.gpg
-repo_gpgcheck=0
-enabled=1
-enabled_metadata=1
-EOF
-
 # Docker Repo
 
 tee /etc/yum.repos.d/docker-ce.repo <<'EOF'
@@ -53,6 +39,7 @@ EOF
 # this installs a package from fedora repos
 rpm-ostree install \
 code \
+openssl \
 zsh \
 neovim \
 vim \
@@ -65,18 +52,21 @@ docker-compose-plugin \
 bootc \
 rclone \
 fastfetch \
+nautilus-gsconnect \
+gnome-shell-extension-appindicator \
+gnome-shell-extension-gsconnect \
+gnome-shell-extension-light-style \
+gnome-shell-extension-blur-my-shell \
 jetbrains-mono-fonts \
 google-noto-sans-cjk-fonts \
-SwayNotificationCenter \
 alacritty \
-gammastep \
-gh \
-foot
+gh
 
 # uninstall packages
 rpm-ostree uninstall \
 firefox \
-firefox-langpacks 
+firefox-langpacks \
+ptyxis
 
 #### Example for enabling a System Unit File
 
