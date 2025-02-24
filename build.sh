@@ -70,7 +70,8 @@ google-noto-sans-cjk-fonts \
 SwayNotificationCenter \
 alacritty \
 gammastep \
-gh
+gh \
+foot
 
 # uninstall packages
 rpm-ostree uninstall \
