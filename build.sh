@@ -59,7 +59,8 @@ gnome-shell-extension-blur-my-shell \
 jetbrains-mono-fonts \
 google-noto-sans-cjk-fonts \
 alacritty \
-gh
+gh \
+hydrapaper
 
 # uninstall packages
 rpm-ostree uninstall \
