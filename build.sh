@@ -56,6 +56,7 @@ nautilus-gsconnect \
 gnome-shell-extension-appindicator \
 gnome-shell-extension-gsconnect \
 gnome-shell-extension-blur-my-shell \
+gnome-shell-extension-dash-to-dock \
 jetbrains-mono-fonts \
 google-noto-sans-cjk-fonts \
 alacritty \
